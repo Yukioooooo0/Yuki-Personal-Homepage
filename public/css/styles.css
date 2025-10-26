@@ -7,7 +7,7 @@ a:active {
 
 body {
         /* 图片路径 */
-    background-image: url(images/miku.jpg);
+    background-image: url(/images/miku.jpg);
         /* 防止图片平铺 */
     background-repeat: no-repeat;
         /* 缩放图片覆整个元素，*/
