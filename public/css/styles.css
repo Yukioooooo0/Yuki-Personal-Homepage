@@ -31,11 +31,10 @@
         .navbar {
             background-color: rgba(255, 255, 255, 0.262);
             backdrop-filter: blur(6px);
-            /* border-radius: 12px; 导航栏背景色：深灰色 */
             overflow: hidden; /* 确保内容不会溢出 */
-            position: fixed; /* 关键！将位置设置为“固定” */
-            top: 0;          /* 关键！将其固定在距离顶部 0px 的位置 */
-            width: 100%;     /* 关键！使其宽度占满整个屏幕 */
+            position: fixed; /* 将位置设置为“固定” */
+            top: 0;          /* 将其固定在距离顶部 0px 的位置 */
+            width: 100%;     /* 使其宽度占满整个屏幕 */
             z-index: 1000;   /* 确保导航栏在其他内容之上（数字越大越靠上） */
         }
 
