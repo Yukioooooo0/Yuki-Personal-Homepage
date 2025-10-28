@@ -1,106 +1,138 @@
-        .box{
-            width: 95%;
-            background-color: rgba(255, 255, 255, 0.225);
-            backdrop-filter: blur(6px);
-            border-radius: 12px;
-            margin: 0 auto;
-            margin-top: 55px;
-            
-        }
-        .box div{
-            width: 100%;
-            padding-top: 20px;
-        }
-        .box ul{
-            list-style-type: none;
-            display: flex;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 0 0 0 0;
-            padding-top: 20px;
-        }
-        .box li{
-            width: 30%;
-            height: 100px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            background-color: rgba(142, 238, 255, 0.262);
-            backdrop-filter: blur(6px);
-            /* margin-left: auto;
-            margin-right: auto; */
-        }
-        .footerright{
-            text-align: right;
-            margin-right: 30px;
-        }
-        .txtcenter{
-            text-align: center;
-        }
-        .footerl{
-            margin-left: 10px;
-        }
-        body{
-            margin: 0;
-            /* 背景图片 */
-            background-image: url(https://free.picui.cn/free/2025/10/27/68ff6fb1db475.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
 
-        }
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.262);
-            backdrop-filter: blur(6px);
-            overflow: hidden; /* 确保内容不会溢出 */
-            position: fixed; /* 将位置设置为“固定” */
-            top: 0;          /* 将其固定在距离顶部 0px 的位置 */
-            width: 100%;     /* 使其宽度占满整个屏幕 */
-            z-index: 1000;   /* 确保导航栏在其他内容之上（数字越大越靠上） */
-        }
+.box {
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.225);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    margin: 55px auto 0 auto;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
 
-        /* 3. 导航栏中的列表 */
-        .navbar ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none; /* 移除列表默认的圆点 */
-            display: flex;         /* 使用 Flexbox 布局，让列表项水平排列 */
-            justify-content: center; /* 让导航项在中间（你也可以用 flex-start 靠左）*/
-        }
+.box li {
+    width: 30%; 
+    margin-bottom: 20px; 
+    position: relative;
+    box-sizing: border-box; 
+    background-color: rgba(142, 238, 255, 0.262);
+    backdrop-filter: blur(6px);
+    background-image: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.3) 0%, 
+        rgba(255, 255, 255, 0.1) 40%,
+        rgba(255, 255, 255, 0.1) 60%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    border-radius: 12px;
+    overflow: hidden; 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.05),
+        inset 0 0 1px 1px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    column-gap: 5%; 
+    row-gap: 20px; 
+}
+.box li:hover {
+    transform: translateY(-5px); 
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.2),
+}
+.box a {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+}
 
-        /* 4. 导航栏中的链接 */
-        .navbar a {
-            display: block; /* 让链接变成块级元素，可以设置 padding */
-            color: white;   /* 链接文字颜色：白色 */
-            text-align: center; /* 文字居中 */
-            padding: 14px 20px; /* 内边距：上下 14px，左右 20px（这决定了导航栏的高度）*/
-            text-decoration: none; /* 移除链接默认的下划线 */
-        }
-
-        /* 5. 鼠标悬停Hover效果 */
-        .navbar a:hover {
-            background-color: #ffffff4e; /* 鼠标放上去时改变背景色 */
-            border-radius: 10px;
-        }
-
-        /* 6. 页面主要内容区域 */
-        .content {
-            padding-top: 10px; 
-            padding-left: 10px;
-            padding-right: 10px; 
-        }
-        .site-footer {
-            margin-top: 10px;
-            color: #000000;      /* 文字颜色（稍浅的灰色）*/
-            padding: 5px;         /* 内边距，让内容不贴边 */
-            /* text-align: center; */
-            background-color: rgba(255, 255, 255, 0.262);
-            backdrop-filter: blur(6px);
-        }
-
-        /* 页脚中的链接样式 */
-        .site-footer a {
-            color: #000000; /* 页脚中的链接使用白色，更显眼 */
-            text-decoration: none;
-        }
+.box a:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+.box a img {
+    max-width:20%;
+    height: auto;
+    margin-right: 15px; 
+    flex-shrink: 0; 
+    border-radius: 8px; 
+    object-fit: cover;  
+}
+.box a span {
+    flex-grow: 1;
+    white-space: nowrap;    
+    overflow: hidden;        
+    text-overflow: ellipsis;
+}
+.footerright{
+    text-align: right;
+    margin-right: 30px;
+}
+.txtcenter{
+    text-align: center;
+}
+.footerl{
+    margin-left: 10px;
+}
+body{
+    margin: 0;
+    background-image: url(https://i.imgs.ovh/2025/10/28/7KVeCd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.262);
+    backdrop-filter: blur(6px);
+    overflow: hidden; 
+    position: fixed; 
+    top: 0;         
+    width: 100%;     
+    z-index: 1000;  
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;         
+    justify-content: center;
+}
+.navbar a {
+    display: block; 
+    color: white;   
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+}
+.navbar a:hover {
+    background-color: #ffffff4e; 
+    border-radius: 10px;
+}
+.content {
+    padding-top: 10px; 
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+.site-footer {
+    margin-top: 10px;
+    color: #000000; 
+    padding: 5px; 
+    background-color: rgba(255, 255, 255, 0.262);
+    backdrop-filter: blur(6px);
+}
+.site-footer a {
+    color: #000000;
+    text-decoration: none;
+}
