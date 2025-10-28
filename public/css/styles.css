@@ -1,4 +1,11 @@
-
+body{
+    margin: 0;
+    background-image: url(https://i.imgs.ovh/2025/10/28/7KVeCd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .box {
     width: 95%;
     background-color: rgba(255, 255, 255, 0.225);
@@ -8,7 +15,6 @@
     padding: 20px; 
     box-sizing: border-box; 
 }
-
 .box li {
     width: 30%; 
     margin-bottom: 20px; 
@@ -57,7 +63,6 @@
     color: #000;
     text-decoration: none;
 }
-
 .box a:hover {
     background-color: rgba(255, 255, 255, 0.1); 
 }
@@ -76,6 +81,7 @@
     text-overflow: ellipsis;
 }
 .footerright{
+    font-size: 10px;
     text-align: right;
     margin-right: 30px;
 }
@@ -84,14 +90,6 @@
 }
 .footerl{
     margin-left: 10px;
-}
-body{
-    margin: 0;
-    background-image: url(https://i.imgs.ovh/2025/10/28/7KVeCd.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 .navbar {
     background-color: rgba(255, 255, 255, 0.262);
