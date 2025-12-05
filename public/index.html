@@ -1,13 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Yuki 的个人博客</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- Highlight.js (light theme) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="site-title" href="/">Yuki 的 个人博客</a>
+                <nav class="site-nav">
+                    <a href="/">主页</a>
+                    <a href="blog/index.html">博客</a>
+                    <a href="/more/index.html">关于</a>
+                </nav>
+            </div>
+        </header>
 
-</body>
+        <main class="container">
+            <section class="hero">
+                <h2>你好，我是 Yuki</h2>
+                <p>程序员、爱好者、持续学习者。这里记录代码片段、工程思考与笔记。</p>
+                <div class="terminal" aria-hidden="false">
+                  <div class="prompt">➜</div>
+                  <pre><code class="language-bash">git clone https://github.com/Yukioooooo0/Yuki-Personal-Homepage.git
+            cd Yuki-Personal-Homepage
+            code .
+            # 开始写博客 ✨</code></pre>
+                </div>
+                <p><a class="btn" href="blog/index.html">查看博文</a></p>
+            </section>
+
+            <section class="recent-posts">
+                <h3>最新文章</h3>
+                <div class="posts-grid">
+                    <article class="post-card">
+                        <h4><a href="posts/sample-post.html">示例文章：搭建个人博客的第一步</a></h4>
+                        <p class="meta">2025-12-06 · 阅读 1 分钟</p>
+                        <p>这是一个示例文章，用于演示博客的布局与样式。点击查看详细内容。</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>© 2025 Yuki • <a href="/more/index.html">关于</a></p>
+            </div>
+
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="js/code-utils.js"></script>
+    </body>
 </html>

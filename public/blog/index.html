@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>博客 - Yuki</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-title" href="/">Yuki 的 个人博客</a>
+        <nav class="site-nav">
+          <a href="/">主页</a>
+          <a href="/more/index.html">关于</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="recent-posts">
+        <h1>全部文章</h1>
+        <div class="posts-grid">
+          <article class="post-card">
+            <h4><a href="../posts/sample-post.html">示例文章：搭建个人博客的第一步</a></h4>
+            <p class="meta">2025-12-06 · 阅读 1 分钟</p>
+            <p>介绍如何搭建一个简单的静态个人博客，包含目录与示例文章。</p>
+            <pre><code class="language-bash">// 示例：常见命令
+npm init -y
+npm install -D live-server
+npx live-server public
+</code></pre>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Yuki</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="../js/code-utils.js"></script>
+  </body>
+</html>

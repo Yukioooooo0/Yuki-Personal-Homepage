@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>示例文章 - Yuki</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-title" href="/">Yuki 的个人博客</a>
+        <nav class="site-nav">
+          <a href="/">主页</a>
+          <a href="../blog/index.html">博客</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="article">
+        <h1>示例文章：搭建个人博客的第一步</h1>
+        <p class="meta">发布于 2025-12-06 · 阅读 1 分钟</p>
+        <p>这是一个示例文章，展示博客文章页面的基本结构。你可以在这里写技术笔记、读书笔记、或随笔。</p>
+        <h2>示例代码</h2>
+        <pre><code class="language-bash"># 初始化仓库
+git init
+git add .
+git commit -m "init"
+</code></pre>
+        <p>要添加新文章：在 <code>public/posts/</code> 中新增一个 HTML 文件，并在 <code>public/blog/index.html</code> 中添加链接即可。</p>
+        <p>如果希望支持 Markdown，可以使用静态站点生成器（如 Hugo、Jekyll）或在构建时把 Markdown 转为 HTML。</p>
+        <p><a href="../blog/index.html">← 返回文章列表</a></p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Yuki</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="../js/code-utils.js"></script>
+  </body>
+</html>
